@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="image/alarm-outline.svg"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script defer src="script.js"></script>
+    <title>Timer</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav class="menu">
+        <ul class="menu-list">
+          <li>
+            <div class="menu-list-element">
+              <label for="deadline-target">Event:</label>
+              <input
+                id="deadline-target"
+                type="text"
+                placeholder="Until the New Year left:"
+                name="deadline-target"
+                required
+              />
+            </div>
+          </li>
+          <li>
+            <div class="menu-list-element">
+              <label for="date">Deadline:</label>
+              <input
+              id="date"
+              type="date"
+              name="date"
+              required
+              
+              />
+            </div>
+          </li>
+          <li>
+            <div class="menu-list-element">
+              <label for="image">Image URL:</label>
+              <input
+                id="image"
+                type="link"
+                placeholder="Image URL"
+                name="image"
+                required
+              />
+            </div>
+          </li>
+          
+          <li>
+            <button class="btn btn-set-timer"">Set timer</button>
+          </li>
+          <li>
+            <button class="btn btn-clear-timer"">Clear timer</button>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-menu">
+        <ion-icon class="icon-menu" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-menu" name="close-outline"></ion-icon>
+      </button>
+
+      <div class="promotion__timer">
+        <div class="title">Until the New Year left:</div>
+        <div class="timer">
+          <div class="timer__block">
+            <span id="days">00</span>
+            days
+          </div>
+          <div class="timer__block">
+            <span id="hours">00</span>
+            hours
+          </div>
+          <div class="timer__block">
+            <span id="minutes">00</span>
+            minutes
+          </div>
+          <div class="timer__block">
+            <span id="seconds">00</span>
+            seconds
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
